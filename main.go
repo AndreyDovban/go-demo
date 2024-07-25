@@ -78,7 +78,7 @@ func outputResult(imt float64) {
 func calculateIMT(kg float64, height float64) (float64, error) {
 	const IMTPower = 2
 	if kg <= 0 || height <= 0 {
-		var err = errors.New("Не указан вес или высота")
+		var err = errors.New("NO_PARAMS_ERROR")
 		return 0, err
 	}
 	var IMT = kg / math.Pow(height/100, IMTPower)
