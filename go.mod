@@ -1,3 +1,3 @@
-module demo/app-1
+module demo/calculate
 
 go 1.22.5
